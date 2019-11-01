@@ -330,7 +330,7 @@ In this exercise, you will create and configure an Azure DevOps account along wi
     
     ![In this screenshot, a Start free button is shown on the Azure DevOps home page.](images/stepbystep/media/image56.png "Azure DevOps screenshot")
 
-3.  Authenticate with a Microsoft account.
+3.  Authenticate with a Microsoft account (preferrably, with the account given with the lab (xxxxx@cloudlabsaioutlook.onmicrosoft.com) you can add your personal/work account later as an admin, if you want to keep this repo.
 
 4.  Choose **Continue** to accept the Terms of Service, Privacy Statement, and Code of Conduct.
 
@@ -597,7 +597,7 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
 8.  This brings up the task editor and opens a panel with configuration details for the dev stage we created earlier. The configuration items set here will be made available to the tasks in this stage.
 
-9.  On this panel, we first need to configure the necessary details to connect the task to Azure for deployment. Let's first start by connecting to our Azure subscription. Select your Azure subscription from the "Azure subscription" dropdown and then choose the **Authorize** button to login and authenticate to the selected subscription.
+9.  On this panel, we first need to configure the necessary details to connect the task to Azure for deployment. Let's first start by connecting to our Azure subscription. Select your Azure subscription from the "Azure subscription" dropdown and then choose the **Authorize** button to login and authenticate to the selected subscription. **Caution:** In some cases you need to use the drop-down and login again, then you must fill in the resource group. 
 
     ![On the panel, Azure subscription is highlighted along with the Authorize button.](images/stepbystep/media/image89b.png "Parameters")
 
