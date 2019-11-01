@@ -185,16 +185,16 @@ Now that the template file has been uploaded, we'll deploy it several times to c
     echo "Enter the location (i.e. westus, centralus, eastus):" &&
     read location &&
     az group create --name $resourceGroupName --location "$location" &&
-    az group deployment create --resource-group $resourceGroupName --template-file "$HOME/azuredeploy.json"
+    az group deployment create --resource-group $resourceGroupName --template-file ""~/studentfiles/armtemplate/azuredeploy.json"
     ```
     
     >**Note**: This command is designed to prompt us to enter the resource group name and Azure region (location) we want to deploy our resources to. The script then takes our inputs and passes them as parameters to the Azure CLI command that calls our recently uploaded template file.
 
     ![In the Azure Cloud Shell window, the command has been entered is we are prompted for the name of the resource group we want to deploy to.](images/stepbystep/media/image44.png "Azure Cloud Shell window")
 
-2.  Enter the name of a resource group you want to deploy the resources to (i.e. TailspinToysRG). If it does not already exist, the template will create it. Then, press **Enter**.
+2.  Enter the name of a resource group you have been assigned in the portal to deploy the resources to (i.e. TailspinToysRG). If it does not already exist, the template will create it. Then, press **Enter**.
 
-3.  Next, we're prompted to enter an Azure region (location) where we want to deploy our resources to (i.e. westus, centralus, eastus). Some examples are suggested by our command.
+3.  Next, we're prompted to enter an Azure region (location) where we want to deploy our resources to (i.e. westus, centralus, eastus). Some examples are suggested by our command, but eastus works for this lab.
     
     ![In the Azure Cloud Shell window, we are prompted for the location we want to deploy to.](images/stepbystep/media/image45.png "Azure Cloud Shell window")
 
